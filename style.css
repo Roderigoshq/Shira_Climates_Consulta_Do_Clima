@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    background-color: black;
+    opacity: 0.8;
+    width: 95%;
+    max-width: 450px;
+    padding: 40px;
+    border-radius: 50px;
+}
+
+input {
+    border: none;
+    outline: none;
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    width: calc(100% - 70px);
+    font-weight: 600;
+}
+
+input::placeholder{
+    font-weight: 600;
+}
+
+button {
+    background-color: rgb(34, 34, 34) ;
+    border: 0;
+    border-radius: 100%;
+    padding: 5px;
+    float: right;
+}
+
+button:hover{
+    background-color: rgb(163, 163, 163);
+    cursor: pointer;
+}
+
+.time-text{
+    font-size: 30px;
+    font-weight:600;
+    color: white;
+    margin-top: 30px;
+}
+
+.celsius-temperature{
+    color: rgb(184, 184, 184);
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.moisture{
+    color: rgb(184, 184, 184);
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.climate{
+    margin-top: 20px;
+}
