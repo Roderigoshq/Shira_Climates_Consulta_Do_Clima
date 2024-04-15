@@ -7,18 +7,35 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <div class="logo">
+        <img src="/ShiraClimatesLogo-PNG-2.png" alt="logo" width="150">
+    </div>
     <div class="container">
-        <input class="cidade" placeholder="Digite sua cidade" type="text">
-        <button onclick="clickbutton()">
-            <img class="search-icon" src="/search-5-svgrepo-com (1).svg" alt="" width="22px" height="22px">
+        <input class="cidade" placeholder="Digite um Estado, cidade, País." type="text">
+        <button class="search" onclick="clickbutton()">
+            <img class="search-icon" src="/search-5-svgrepo-com (1).svg" alt="search-icon" width="22px" height="22px">
         </button>
-        <h2 class="time-text">Tempo em ...</h2>
+        <div class="time-climate">
+            <div class="tempo">
+                <h3 class="time-text-secondary">Tempo em</h3>
+                <h2 class="time-text">...</h2>
+            </div>
+            <div class="clima">
+                <img class="climate" src="https://openweathermap.org/img/wn/04n.png" width="100px" height="100px" alt="clima-icon">
+            </div>
+        </div>
 
-        <p class="celsius-temperature">..°C</p>
-
-        <img class="climate" src="https://openweathermap.org/img/wn/04n.png" width="60px" height="60px" alt="">
-
-        <p class="humidity">Umidade: ..%</p>
+        <p class="dados">Dados:</p>
+        <div class="temp-umid">
+            <div class="temp">
+                <h2>Temperatura:</h2>
+                <p class="celsius-temperature">..°C</p>
+            </div>
+            <div class="umid">
+                <h2>Umidade:</h2>
+                <p class="humidity">..%</p>
+            </div>
+        </div>
     </div>
 </body>
 <script src="/scripts.js"></script>

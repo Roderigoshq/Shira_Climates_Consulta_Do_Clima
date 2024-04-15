@@ -17,9 +17,17 @@ async function buscarCidade(cidade){
 }
 
 function colocarNaTela(dados) {
-    document.querySelector(".time-text").innerHTML = "Tempo em " + dados.name;
+    document.querySelector(".time-text").innerHTML = dados.name;
     document.querySelector(".celsius-temperature").innerHTML = Math.floor(dados.main.temp) + "°C";
     document.querySelector(".climate").src = 'https://openweathermap.org/img/wn/' + dados.weather[0].icon + ".png"
-    document.querySelector(".humidity").innerHTML = "umidade: " + Math.floor(dados.main.humidity) + "%"
+    document.querySelector(".humidity").innerHTML = Math.floor(dados.main.humidity) + "%"
 
 }
+
+function pressEnter(event) {
+    if (event.keyCode === 13) {
+      document.querySelector(".search").click();
+    }
+  }
+  
+  document.querySelector(".cidade").addEventListener("keydown", pressEnter);

@@ -6,31 +6,35 @@
 }
 
 body{
-    background-image: url("https://source.unsplash.com/1600x900/?landscape");
-    background-size: cover;
+    background-color: #161616;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
 }
 
+.logo{
+    margin-bottom: 20px;
+}
+
 .container {
-    background-color: black;
-    opacity: 0.8;
+    background-color: #1E1E1E;
     width: 95%;
-    max-width: 450px;
+    max-width: 600px;
+    height: 440px;
     padding: 40px;
-    border-radius: 50px;
+    border-radius: 15px;
 }
 
 input {
     border: none;
     outline: none;
-    background-color: rgb(34, 34, 34);
+    background-color: #171717;
     padding: 10px;
     border-radius: 50px;
-    color: rgb(255, 255, 255);
+    color: #606060;
     width: calc(100% - 70px);
     font-weight: 600;
 }
@@ -40,37 +44,78 @@ input::placeholder{
 }
 
 button {
-    background-color: rgb(34, 34, 34) ;
+    background-color: #171717 ;
     border: 0;
     border-radius: 100%;
     padding: 5px;
     float: right;
+    transition: 0.3s;
 }
 
 button:hover{
-    background-color: rgb(163, 163, 163);
+    background-color: rgb(56, 56, 56);
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.tempo{
+    color: white;
+    margin-top: 36px;
+}
+
+.time-text-secondary{
+    font-weight:300;
+    font-size: 21px;
 }
 
 .time-text{
-    font-size: 30px;
     font-weight:600;
-    color: white;
-    margin-top: 30px;
+    font-size: 56px;
+}
+
+.time-climate {
+    display: flex;
+    flex-direction: row;
 }
 
 .celsius-temperature{
-    color: rgb(184, 184, 184);
     margin-top: 10px;
-    font-weight: 700;
+    font-weight: 200;
+    font-size: 40px;
 }
 
 .humidity{
-    color: rgb(184, 184, 184);
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 40px;
+    font-weight: 200;
 }
 
+
 .climate{
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.dados{
+    color: rgb(92, 92, 92);
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.temp-umid{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    color: white;
+    
+}
+
+
+.umid{
+    margin-left: 80px;
+    font-size: 10px;
+}
+
+.temp{
+    font-size: 10px;
 }
