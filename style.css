@@ -96,6 +96,14 @@ button:hover{
     margin-left: 50px;
 }
 
+.rectangle{
+    width: 4px;
+    height: 70px;
+    background-color: #4d4d4d;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
 .dados{
     color: rgb(92, 92, 92);
     font-size: 20px;

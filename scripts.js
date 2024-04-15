@@ -1,6 +1,5 @@
 function clickbutton() {
     let cidade = document.querySelector(".cidade").value;
-    console.log(cidade);
 
     buscarCidade(cidade);
 }
@@ -22,12 +21,23 @@ function colocarNaTela(dados) {
     document.querySelector(".climate").src = 'https://openweathermap.org/img/wn/' + dados.weather[0].icon + ".png"
     document.querySelector(".humidity").innerHTML = Math.floor(dados.main.humidity) + "%"
 
+    if (Math.floor(dados.main.temp) >= 20) {
+        let rectangle = document.querySelector(".rectangle");
+        rectangle.style.backgroundColor = "#FFA438"
+      }
+    else{
+        let rectangle = document.querySelector(".rectangle");
+        rectangle.style.backgroundColor = "#1070FF"
+    }
+
 }
 
 function pressEnter(event) {
     if (event.keyCode === 13) {
       document.querySelector(".search").click();
+      document.querySelector(".cidade").value = '';
     }
   }
   
+  document.querySelector(".cidade").addEventListener("keydown", pressEnter);
   document.querySelector(".cidade").addEventListener("keydown", pressEnter);
