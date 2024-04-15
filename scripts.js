@@ -18,7 +18,7 @@ async function buscarCidade(cidade){
 function colocarNaTela(dados) {
     document.querySelector(".time-text").innerHTML = dados.name;
     document.querySelector(".celsius-temperature").innerHTML = Math.floor(dados.main.temp) + "°C";
-    document.querySelector(".climate").src = 'https://openweathermap.org/img/wn/' + dados.weather[0].icon + ".png"
+    document.querySelector(".climate").src = "/images/" + dados.weather[0].icon + ".png"
     document.querySelector(".humidity").innerHTML = Math.floor(dados.main.humidity) + "%"
 
     if (Math.floor(dados.main.temp) >= 20) {
