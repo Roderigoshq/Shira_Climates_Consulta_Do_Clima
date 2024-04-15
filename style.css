@@ -94,6 +94,7 @@ button:hover{
 .climate{
     margin-top: 40px;
     margin-left: 50px;
+    display: none;
 }
 
 .rectangle{
@@ -117,7 +118,6 @@ button:hover{
     color: white;
     
 }
-
 
 .umid{
     margin-left: 80px;

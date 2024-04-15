@@ -18,16 +18,18 @@ async function buscarCidade(cidade){
 function colocarNaTela(dados) {
     document.querySelector(".time-text").innerHTML = dados.name;
     document.querySelector(".celsius-temperature").innerHTML = Math.floor(dados.main.temp) + "°C";
-    document.querySelector(".climate").src = "/images/" + dados.weather[0].icon + ".png"
-    document.querySelector(".humidity").innerHTML = Math.floor(dados.main.humidity) + "%"
+    climaicon = document.querySelector(".climate");
+    climaicon.src = "/images/" + dados.weather[0].icon + ".png";
+    climaicon.style.display = "block";
+    document.querySelector(".humidity").innerHTML = Math.floor(dados.main.humidity) + "%";
 
     if (Math.floor(dados.main.temp) >= 20) {
         let rectangle = document.querySelector(".rectangle");
-        rectangle.style.backgroundColor = "#FFA438"
+        rectangle.style.backgroundColor = "#FFA438";
       }
     else{
         let rectangle = document.querySelector(".rectangle");
-        rectangle.style.backgroundColor = "#1070FF"
+        rectangle.style.backgroundColor = "#1070FF";
     }
 
 }
